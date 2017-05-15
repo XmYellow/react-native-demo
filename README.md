@@ -1,44 +1,3 @@
-[![GitHub tag](https://img.shields.io/github/tag/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/tags)
-[![GitHub contributors](https://img.shields.io/github/contributors/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/contributors)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/mcnamee/react-native-starter-app/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues-closed)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues-pr)
-
-
-[![Build Status](https://travis-ci.org/mcnamee/react-native-starter-app.svg?branch=master)](https://travis-ci.org/mcnamee/react-native-starter-app)
-[![Coverage Status](https://coveralls.io/repos/github/mcnamee/react-native-starter-app/badge.svg?branch=master)](https://coveralls.io/github/mcnamee/react-native-starter-app?branch=master)
-
-![alt text](/docs/rnsk-logo.jpg "React Native Starter Kit")
-
-# React Native Starter Kit
-
-React Native Starter Kit helps you get started with React Native. It contains a bunch of helpful components, building blocks and basic structure to allow you to jump straight into building an app.
-
-![alt text](/docs/rnsk-screens.jpg "React Native Starter App")
-
----
-
-## Docs
-
-1. [Features](#features)
-1. **Before you start**
-   1. [Getting Started with React Native](/docs/react-native.md)
-   1. [React Native Quick Tips](/docs/quick-tips.md)
-   1. [Understanding the File Structure](#understanding-the-file-structure)
-   1. [Opinions Guiding this Project](/docs/opinions.md)
-1. **Using RNSK**
-   1. [Getting Up and Running with RNSK](#getting-started)
-   1. [Renaming the App from StarterKit](/docs/renaming.md)
-   1. [Routing / Navigating](/src/navigation/README.md)
-   1. [Using Google Analytics](/docs/google-analytics.md)
-   1. [Interacting with a REST API](/docs/api.md)
-   1. [Testing](/docs/testing.md)
-1. [Contributing](/docs/contributing.md)
-1. [Licence](LICENSE)
-
----
-
 ## Features
 
 | Feature | Summary |
@@ -60,7 +19,7 @@ React Native Starter Kit helps you get started with React Native. It contains a 
 ## Getting Started
 
 1. Ensure you've followed the [React Native - Get Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for the platform/s of choice
-1. Clone this project `git clone https://github.com/mcnamee/react-native-starter-app.git`
+1. Clone this project
 1. Run `npm install` from root directory
 1. Start the app in [an emulator](/docs/quick-tips.md#running-in-an-emulator)
 
