@@ -22,7 +22,6 @@ import MsgDetail from '@containers/MsgDetail/MsgDetailView';
 import AuthScenes from './auth';
 import TabsScenes from './tabs';
 
-
 /* Routes ==================================================================== */
 export default Actions.create(
   <Scene key={'root'} {...AppConfig.navbarProps}>

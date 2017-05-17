@@ -20,6 +20,7 @@ class MsgCenter extends Component {
     constructor(props) {
         super(props);
         this.updateIndex = this.updateIndex.bind(this)
+        this.getDetail = this.getDetail.bind(this)
         const ds =new ListView.DataSource({
             rowHasChanged: (row1, row2) => row1 !== row2,
         })
@@ -48,7 +49,9 @@ class MsgCenter extends Component {
         this.setState({selectedIndex})
     }
     getDetail () {
-       console.info("==========")
+        console.info("======")
+        console.info(this)
+
     }
     modify = () => {
     }
@@ -94,7 +97,7 @@ class MsgCenter extends Component {
 
     render = () => {
         const { selectedIndex } = this.state
-
+        this.getDetail()
         return (
                 <View style={{flex:1,marginTop:54,backgroundColor:'#f5f5f5'}}>
                     <ButtonGroup
