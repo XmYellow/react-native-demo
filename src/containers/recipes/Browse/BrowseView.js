@@ -104,16 +104,18 @@ class RecipeTabs extends Component {
   fetchData = () => {
     // Get meals to populate tabs
     if (!this.props.meals || this.props.meals.length < 1) {
+      //console.log(this.props.getMeals)
+      //this.props.getMeals()
+      //  .then(() => {
+      //    this.setTabs();
+      //  }).catch((err) => {
+      //    const error = AppAPI.handleError(err);
+      //    this.setState({
+      //      loading: false,
+      //      error
+      //    });
+      //  });
       this.props.getMeals()
-        .then(() => {
-          this.setTabs();
-        }).catch((err) => {
-          const error = AppAPI.handleError(err);
-          this.setState({
-            loading: false,
-            error
-          });
-        });
     } else {
       this.setTabs();
     }
@@ -185,7 +187,5 @@ class RecipeTabs extends Component {
 }
 
 //renderHeader={this.renderHeader}
-
-
 /* Export Component ==================================================================== */
 export default RecipeTabs;

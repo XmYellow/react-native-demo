@@ -1,0 +1,294 @@
+[
+  {
+    "id": 43,
+    "date": "2016-10-28T16:29:19",
+    "date_gmt": "2016-10-28T06:29:19",
+    "guid": {
+      "rendered": "http:\/\/wp-api.mcnam.ee\/?post_type=recipes&#038;p=43"
+    },
+    "modified": "2016-10-28T16:30:29",
+    "modified_gmt": "2016-10-28T06:30:29",
+    "slug": "enim-voluptatem-quia-voluptas",
+    "status": "publish",
+    "type": "recipes",
+    "link": "http:\/\/wp-api.mcnam.ee\/recipes\/enim-voluptatem-quia-voluptas\/",
+    "title": {
+      "rendered": "Enim voluptatem quia voluptas"
+    },
+    "content": {
+      "rendered": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.<\/p>\n",
+      "protected": false
+    },
+    "featured_media": 37,
+    "template": "",
+    "recipe_meal": [
+      2
+    ],
+    "better_featured_image": {
+      "id": 37,
+      "alt_text": "",
+      "caption": "",
+      "description": "",
+      "media_type": "image",
+      "media_details": {
+        "width": 614,
+        "height": 409,
+        "file": "2016\/10\/oat-and-berry-acai-bowl-33157_l.jpeg",
+        "sizes": {
+          "thumbnail": {
+            "file": "oat-and-berry-acai-bowl-33157_l-150x150.jpeg",
+            "width": 150,
+            "height": 150,
+            "mime-type": "image\/jpeg",
+            "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/oat-and-berry-acai-bowl-33157_l-150x150.jpeg"
+          },
+          "medium": {
+            "file": "oat-and-berry-acai-bowl-33157_l-300x200.jpeg",
+            "width": 300,
+            "height": 200,
+            "mime-type": "image\/jpeg",
+            "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/oat-and-berry-acai-bowl-33157_l-300x200.jpeg"
+          }
+        },
+        "image_meta": {
+          "aperture": "0",
+          "credit": "",
+          "camera": "",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "",
+          "focal_length": "0",
+          "iso": "0",
+          "shutter_speed": "0",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": 30,
+      "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/oat-and-berry-acai-bowl-33157_l.jpeg"
+    },
+    "acf": {
+      "": false,
+      "ingredients": [
+        {
+          "ingredient": "sed do eiusmod tempor incididunt"
+        },
+        {
+          "ingredient": "aute irure dolor in"
+        },
+        {
+          "ingredient": "do eiusmod tempor"
+        },
+        {
+          "ingredient": "uis aute irure dolor in"
+        },
+        {
+          "ingredient": "doloremque laudantium"
+        },
+        {
+          "ingredient": "cupidatat non proident"
+        }
+      ],
+      "methods": [
+        {
+          "method": "iste natus error sit voluptatem accusantium doloremque laudantium"
+        },
+        {
+          "method": "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+        },
+        {
+          "method": "sed quia non numquam eius modi tempora incidunt ut labore"
+        }
+      ]
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipes\/43"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipes"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/types\/recipes"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/media\/37"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/media?parent=43"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "recipe_meal",
+          "embeddable": true,
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipe_meal?post=43"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "date": "2016-10-28T16:28:53",
+    "date_gmt": "2016-10-28T06:28:53",
+    "guid": {
+      "rendered": "http:\/\/wp-api.mcnam.ee\/?post_type=recipes&#038;p=42"
+    },
+    "modified": "2016-10-28T16:30:37",
+    "modified_gmt": "2016-10-28T06:30:37",
+    "slug": "architecto-beatae-vitae-dicta-sunt",
+    "status": "publish",
+    "type": "recipes",
+    "link": "http:\/\/wp-api.mcnam.ee\/recipes\/architecto-beatae-vitae-dicta-sunt\/",
+    "title": {
+      "rendered": "Architecto beatae vitae dicta sunt"
+    },
+    "content": {
+      "rendered": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.<\/p>\n",
+      "protected": false
+    },
+    "featured_media": 36,
+    "template": "",
+    "recipe_meal": [
+      3
+    ],
+    "better_featured_image": {
+      "id": 36,
+      "alt_text": "",
+      "caption": "",
+      "description": "",
+      "media_type": "image",
+      "media_details": {
+        "width": 614,
+        "height": 409,
+        "file": "2016\/10\/spiders-web-cupcakes-33285_l.jpeg",
+        "sizes": {
+          "thumbnail": {
+            "file": "spiders-web-cupcakes-33285_l-150x150.jpeg",
+            "width": 150,
+            "height": 150,
+            "mime-type": "image\/jpeg",
+            "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/spiders-web-cupcakes-33285_l-150x150.jpeg"
+          },
+          "medium": {
+            "file": "spiders-web-cupcakes-33285_l-300x200.jpeg",
+            "width": 300,
+            "height": 200,
+            "mime-type": "image\/jpeg",
+            "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/spiders-web-cupcakes-33285_l-300x200.jpeg"
+          }
+        },
+        "image_meta": {
+          "aperture": "0",
+          "credit": "",
+          "camera": "",
+          "caption": "",
+          "created_timestamp": "0",
+          "copyright": "",
+          "focal_length": "0",
+          "iso": "0",
+          "shutter_speed": "0",
+          "title": "",
+          "orientation": "0",
+          "keywords": []
+        }
+      },
+      "post": 30,
+      "source_url": "http:\/\/wp-api.mcnam.ee\/wp-content\/uploads\/2016\/10\/spiders-web-cupcakes-33285_l.jpeg"
+    },
+    "acf": {
+      "": false,
+      "ingredients": [
+        {
+          "ingredient": "sed do eiusmod tempor incididunt"
+        },
+        {
+          "ingredient": "aute irure dolor in"
+        },
+        {
+          "ingredient": "do eiusmod tempor"
+        },
+        {
+          "ingredient": "uis aute irure dolor in"
+        },
+        {
+          "ingredient": "doloremque laudantium"
+        },
+        {
+          "ingredient": "cupidatat non proident"
+        }
+      ],
+      "methods": [
+        {
+          "method": "iste natus error sit voluptatem accusantium doloremque laudantium"
+        },
+        {
+          "method": "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+        },
+        {
+          "method": "sed quia non numquam eius modi tempora incidunt ut labore"
+        }
+      ]
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipes\/42"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipes"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/types\/recipes"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/media\/36"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/media?parent=42"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "recipe_meal",
+          "embeddable": true,
+          "href": "http:\/\/wp-api.mcnam.ee\/wp-json\/wp\/v2\/recipe_meal?post=42"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

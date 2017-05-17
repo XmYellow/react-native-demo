@@ -1,11 +1,3 @@
-/**
- * Auth WebView
- *  - Used by sign up and password reset
- *  - Shows the WebViews and pops when finished
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 import React, { Component, PropTypes } from 'react';
 import { Actions } from 'react-native-router-flux';
 

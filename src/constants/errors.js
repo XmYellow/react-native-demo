@@ -1,10 +1,3 @@
-/**
- * App Error Messages
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 export default {
   // Defaults
   default: 'Hmm, an unknown error occured',

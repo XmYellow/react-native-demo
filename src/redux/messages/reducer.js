@@ -10,14 +10,10 @@ export default function messageReducer(state = initialState, action) {
     case 'MESSAGES_REPLACE': {
       let messages = [];
 
-      // Pick out the items to keep
+      console.info(action.data)
       if (action.data && typeof action.data === 'object') {
         message = action.data.map(item => ({
-          //id: item.id,
-          //name: AppUtil.htmlEntitiesDecode(item.name),
-          //slug: AppUtil.htmlEntitiesDecode(item.slug),
-          //description: AppUtil.htmlEntitiesDecode(item.description),
-          //count: item.count,
+
         }));
       }
 

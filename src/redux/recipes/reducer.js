@@ -9,7 +9,7 @@ import AppUtil from '@lib/util';
 
 // Set initial state
 export const initialState = {
-  meals: [],
+  meals: []
 };
 
 export default function recipeReducer(state = initialState, action) {
@@ -31,6 +31,7 @@ export default function recipeReducer(state = initialState, action) {
       return {
         ...state,
         meals,
+        loading:false
       };
     }
     default:

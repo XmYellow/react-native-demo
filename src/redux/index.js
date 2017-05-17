@@ -1,8 +1,6 @@
 /**
  * Combine All Reducers
  *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
  */
 
 import { combineReducers } from 'redux';
@@ -13,6 +11,7 @@ import router from '@redux/router/reducer';
 import sideMenu from '@redux/sidemenu/reducer';
 import user from '@redux/user/reducer';
 import recipe from '@redux/recipes/reducer';
+import messages from '@redux/messages/reducer';
 
 // Combine all
 const appReducer = combineReducers({
@@ -20,6 +19,7 @@ const appReducer = combineReducers({
   sideMenu,
   user,
   recipe,
+  messages
 });
 
 // Setup root reducer

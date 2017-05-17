@@ -1,31 +1,23 @@
-/**
- * Recipe Actions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 import AppAPI from '@lib/api';
 
-/**
-  * Get Meals
-  */
 export function getMeals() {
-  return dispatch =>
-    AppAPI.meals.get()
-      .then((res) => {
-        dispatch({
-          type: 'MEALS_REPLACE',
-          data: res,
-        });
-      });
+    return dispatch => {
+        fetch("http://rapapi.org/mockjsdata/18498/meals")
+            .then((response) => response.json())
+            .then(res => {
+                dispatch({
+                    type: 'MEALS_REPLACE',
+                    data: res
+                });
+            })
+            .catch((err) => {
+                console.log(err)
+            });
+    }
 }
 
-/**
-  * Reset Meals
-  */
 export function reset() {
   return {
-    type: 'MEALS_RESET',
+    type: 'MEALS_RESET'
   };
 }
