@@ -35,6 +35,9 @@ class MsgCenter extends Component {
             .then((response) => response.json())
             .then((responseData) => {
                 console.info(responseData)
+                this.setState({
+                    results:responseData.result
+                })
             })
             .catch((error) => {
             })
