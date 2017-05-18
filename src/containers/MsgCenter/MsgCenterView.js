@@ -1,5 +1,5 @@
 import React, { PropTypes,Component } from 'react';
-import { View,Slider,Image,TouchableHighlight,ListView } from 'react-native';
+import { View,Slider,Image,TouchableHighlight,ListView ,InteractionManager} from 'react-native';
 
 // Consts and Libs
 import { AppStyles } from '@theme/';
@@ -8,54 +8,59 @@ import { Actions } from 'react-native-router-flux';
 import { Text,Spacer, List, } from '@ui/';
 import { ButtonGroup } from 'react-native-elements';
 
-var data = [{id:1},{id:2},{id:3},{id:4}]
-
 class MsgCenter extends Component {
     static componentName = 'MsgCenter';
 
     static propTypes = {
-        value: PropTypes.number
     }
 
     constructor(props) {
         super(props);
         this.updateIndex = this.updateIndex.bind(this)
         this.getDetail = this.getDetail.bind(this)
-        const ds =new ListView.DataSource({
-            rowHasChanged: (row1, row2) => row1 !== row2,
-        })
+        this.renderItem = this.renderItem.bind(this);
+        this.onPressItem = this.onPressItem.bind(this);
         this.state= {
             value: 0.5 ,
             selectedIndex: 1,
-            dataSource: ds.cloneWithRows([
-                {
-                    "msg_id": "5749b4b2-ce66-4853-b350-c14d308978",
-                    "title": "黑名单",
-                    "name": "none",
-                    "camera": "大堂1",
-                    "url": "http://qiniupics.oss-cn-shanghai.aliyuncs.com/0db4b8a40dbe2df9a9c3b1f0d9a37c02",
-                    "createdAt": "2017-04-18 14:40:25"
-                } ,{
-                    "msg_id": "5749b4b2-ce66-4853-b350-c14d306d75b9",
-                    "title": "警告",
-                    "name": "none",
-                    "camera": "大堂2",
-                    "url": "http://qiniupics.oss-cn-shanghai.aliyuncs.com/0db4b8a40dbe2df9a9c3b1f0d9a37c02",
-                    "createdAt": "2017-04-18 14:40:25"
-                }])
+            dataSource:new ListView.DataSource({
+                rowHasChanged: (row1, row2) => row1 !== row2
+            }),
+            results:[]
         };
     }
     updateIndex (selectedIndex) {
         this.setState({selectedIndex})
+        fetch("http://rapapi.org/mockjsdata/18498/msg")
+            .then((response) => response.json())
+            .then((responseData) => {
+                console.info(responseData)
+            })
+            .catch((error) => {
+            })
+            .done();
     }
     getDetail () {
         console.info("======")
-        console.info(this)
-
+        fetch("http://rapapi.org/mockjsdata/18498/msg")
+            .then((response) => response.json())
+            .then((responseData) => {
+               this.setState({
+                   results:responseData.result
+               })
+            })
+            .catch((error) => {
+            })
+            .done();
     }
-    modify = () => {
+
+    componentWillMount(){
+        this.getDetail()
     }
 
+    onPressItem(listContent) {
+        Actions.msgdetail({item:listContent})
+    }
     renderContent(dataSource) {
         return (
             <ListView
@@ -72,7 +77,7 @@ class MsgCenter extends Component {
     renderItem(listContent) {
         return (
             <View style={{paddingHorizontal:10}}>
-                <TouchableHighlight onPress={Actions.msgdetail}
+                <TouchableHighlight onPress={()=> { this.onPressItem(listContent) }}
                                     underlayColor={'#fff'}>
                     <View style={[AppStyles.row]} >
                         <View style={[AppStyles.flex1]}>
@@ -88,6 +93,7 @@ class MsgCenter extends Component {
                         <View style={[AppStyles.flex1]}>
                             <Text style={{fontSize:11,fontWeight:'400'}}>{"5分钟前"}</Text>
                         </View>
+
                     </View>
                 </TouchableHighlight>
                 <Spacer size={10}/>
@@ -97,7 +103,6 @@ class MsgCenter extends Component {
 
     render = () => {
         const { selectedIndex } = this.state
-        this.getDetail()
         return (
                 <View style={{flex:1,marginTop:54,backgroundColor:'#f5f5f5'}}>
                     <ButtonGroup
@@ -107,11 +112,8 @@ class MsgCenter extends Component {
                         TextStyle={{fontSize:11}}
                         containerStyle={{height: 30}} />
                     <Spacer size={10}/>
-
-                    {this.renderContent(this.state.dataSource)}
-
+                    {this.renderContent(this.state.dataSource.cloneWithRows(this.state.results))}
                 </View>)
-
     }
 }
 
