@@ -15,3 +15,4 @@ export function close() {
     type: 'SIDEMENU_CLOSE',
   };
 }
+

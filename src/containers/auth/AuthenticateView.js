@@ -1,8 +1,3 @@
-/**
- * Authenticate Screen
- *  - Entry screen for all authentication
- *  - User can tap to login, forget password, signup...
- */
 import React, { Component } from 'react';
 import {
   View,
@@ -53,18 +48,6 @@ class Authenticate extends Component {
             title={'Login'}
             icon={{ name: 'lock' }}
             onPress={Actions.login}
-          />
-        </View>
-      </View>
-
-      <Spacer size={10} />
-
-      <View style={[AppStyles.row, AppStyles.paddingHorizontal]}>
-        <View style={[AppStyles.flex1]}>
-          <Button
-            title={'Sign up'}
-            icon={{ name: 'face' }}
-            onPress={Actions.signUp}
           />
         </View>
       </View>

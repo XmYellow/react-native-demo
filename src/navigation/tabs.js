@@ -17,8 +17,7 @@ import { NavbarSettingButton } from '@containers/ui/NavbarSettingButton/NavbarSe
 import Placeholder from '@components/general/Placeholder';
 import Error from '@components/general/Error';
 import StyleGuide from '@containers/StyleGuideView';
-import Recipes from '@containers/recipes/Browse/BrowseContainer';
-import RecipeView from '@containers/recipes/RecipeView';
+import MsgCenterView from '@containers/MsgCenter/MsgCenterView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -37,22 +36,15 @@ const scenes = (
       {...navbarPropsTabs}
       key={'recipes'}
       title={'Recipes'}
-      icon={props => TabIcon({ ...props, icon: 'search' })}
+      icon={props => TabIcon({ ...props, icon:'speaker-notes' })}
     >
       <Scene
-        {...navbarPropsTabs}
-        key={'recipesListing'}
-        component={Recipes}
-        title={AppConfig.appName}
-        analyticsDesc={'Recipes: Browse Recipes'}
-      />
-      <Scene
-        {...AppConfig.navbarProps}
-        key={'recipeView'}
-        component={RecipeView}
-        getTitle={props => ((props.title) ? props.title : 'View Recipe')}
-        analyticsDesc={'RecipeView: View Recipe'}
-      />
+            key={'msgcenter'}
+            {...navbarPropsTabs}
+            title={'MsgCenter'}
+            component={MsgCenterView}
+            analyticsDesc={'Placeholder: MsgCenter'}
+        />
     </Scene>
 
     <Scene
@@ -78,7 +70,7 @@ const scenes = (
       {...navbarPropsTabs}
       title={'Style Guide'}
       component={StyleGuide}
-      icon={props => TabIcon({ ...props, icon: 'speaker-notes' })}
+      icon={props => TabIcon({ ...props, icon: 'search' })}
       analyticsDesc={'StyleGuide: Style Guide'}
     />
   </Scene>

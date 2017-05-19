@@ -20,11 +20,6 @@ class AuthWebView extends Component {
     clearTimeout(timeout);
   }
 
-  /**
-    * Pop back a scene when URL changes
-    * + for when the action is completed
-    * + restricting people from freely browsing
-    */
   urlChanged = (newUrl) => {
     if (newUrl !== this.props.url) {
       timeout = setTimeout(() => {
