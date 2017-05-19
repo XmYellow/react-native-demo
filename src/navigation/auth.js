@@ -1,9 +1,3 @@
-/**
- * Auth Scenes
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 import React from 'react';
 import { Scene, ActionConst } from 'react-native-router-flux';
 
@@ -33,25 +27,8 @@ const scenes = (
       component={AuthLogin}
       analyticsDesc={'AuthLogin: Login'}
     />
-    <Scene
-      {...AppConfig.navbarProps}
-      key={'signUp'}
-      title={'Sign Up'}
-      clone
-      component={AuthWebView}
-      url={AppConfig.urls.signUp}
-      analyticsDesc={'AuthWebView: Sign Up'}
-    />
-    <Scene
-      {...AppConfig.navbarProps}
-      key={'passwordReset'}
-      title={'Password Reset'}
-      clone
-      component={AuthWebView}
-      url={AppConfig.urls.resetPassword}
-      analyticsDesc={'AuthWebView: Password Reset'}
-    />
   </Scene>
 );
 
 export default scenes;
+

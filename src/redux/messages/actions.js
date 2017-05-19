@@ -2,7 +2,7 @@ import AppAPI from '@lib/api';
 
 export function getMessages() {
   return dispatch =>
-    AppAPI.messages.get()
+      fetch("http://rapapi.org/mockjsdata/18498/meals")
       .then((res) => {
         dispatch({
           type: 'MESSAGES_REPLACE',

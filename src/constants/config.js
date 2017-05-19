@@ -1,9 +1,3 @@
-/**
- * Global App Config
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 /* global __DEV__ */
 import { AppColors, AppStyles, AppSizes } from '@theme/';
 
@@ -19,8 +13,8 @@ export default {
 
   // URLs
   urls: {
-    resetPassword: 'http://wp-api.mcnam.ee/wp-login.php?action=lostpassword',
-    signUp: 'http://wp-api.mcnam.ee/wp-login.php?action=register',
+    resetPassword: 'https://github.com/XmYellow',
+    signUp: 'https://github.com/XmYellow',
   },
 
   // Navbar Props

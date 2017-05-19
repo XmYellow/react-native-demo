@@ -1,8 +1,6 @@
 /**
  * App Navigation
  *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
  */
 import React from 'react';
 import { Actions, Scene, ActionConst } from 'react-native-router-flux';
@@ -21,7 +19,6 @@ import MsgCenter from '@containers/MsgCenter/MsgCenterView';
 import MsgDetail from '@containers/MsgDetail/MsgDetailView';
 import AuthScenes from './auth';
 import TabsScenes from './tabs';
-
 
 /* Routes ==================================================================== */
 export default Actions.create(

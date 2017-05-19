@@ -1,10 +1,4 @@
-/**
- * API Functions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
- /* global fetch console */
+
 import DeviceInfo from 'react-native-device-info';
 
 import JWT from '@lib/api.jwt';
@@ -227,6 +221,7 @@ const AppAPI = {
   deleteToken: Token.deleteToken,
 };
 
+console.log(ENDPOINTS)
 ENDPOINTS.forEach((endpoint, key) => {
   AppAPI[key] = {
     get: (params, payload) => fetcher('GET', endpoint, params, payload),

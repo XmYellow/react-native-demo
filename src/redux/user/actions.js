@@ -1,8 +1,6 @@
 /**
  * User Actions
  *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
  */
 
 import jwtDecode from 'jwt-decode';
@@ -81,10 +79,7 @@ export function getMe() {
     });
 }
 
-/**
-  * Update My User Data
-  * - Receives complete user data in return
-  */
+
 export function updateMe(payload) {
   return dispatch => AppAPI.me.post(payload)
     .then((userData) => {

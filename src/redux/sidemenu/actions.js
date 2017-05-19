@@ -1,10 +1,3 @@
-/**
- * Sidemenu Actions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 export function toggle() {
   return {
     type: 'SIDEMENU_TOGGLE',
@@ -22,3 +15,4 @@ export function close() {
     type: 'SIDEMENU_CLOSE',
   };
 }
+

@@ -1,8 +1,6 @@
 /**
  * Menu Contents
  *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
  */
 import React, { Component, PropTypes } from 'react';
 import {
@@ -97,23 +95,12 @@ class Menu extends Component {
     this.state = {
       menu: [
         {
-          title: 'Recipes',
-          onPress: () => { this.props.closeSideMenu(); Actions.app(); }
-        },
-        {
-          title: 'Example Link',
-          onPress: () => { this.props.closeSideMenu(); Actions.comingSoon(); }
-        },
-        {
           title: 'Setting',
           onPress: () => { this.props.closeSideMenu(); Actions.setting(); }
         },{
           title: 'MsgCenter',
           onPress: () => { this.props.closeSideMenu(); Actions.msgcenter(); }
-        },{
-          title: 'MsgDetail',
-          onPress: () => { this.props.closeSideMenu(); Actions.msgdetail(); }
-        },
+        }
       ],
     };
   }
