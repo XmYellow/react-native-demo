@@ -32,22 +32,16 @@ const navbarPropsTabs = {
 /* Routes ==================================================================== */
 const scenes = (
   <Scene key={'tabBar'} tabs tabBarIconContainerStyle={AppStyles.tabbar} pressOpacity={0.95}>
-    <Scene
-      {...navbarPropsTabs}
-      key={'recipes'}
-      title={'Recipes'}
-      icon={props => TabIcon({ ...props, icon:'speaker-notes' })}
-    >
-      <Scene
-            key={'msgcenter'}
-            {...navbarPropsTabs}
-            title={'MsgCenter'}
-            component={MsgCenterView}
-            analyticsDesc={'Placeholder: MsgCenter'}
-        />
-    </Scene>
 
     <Scene
+      key={'MsgCenterView'}
+      {...navbarPropsTabs}
+      title={'MsgCenter'}
+      component={MsgCenterView}
+      icon={props => TabIcon({ ...props, icon: 'speaker-notes' })}
+      analyticsDesc={'Placeholder: MsgCenterView'}
+    />
+      <Scene
       key={'timeline'}
       {...navbarPropsTabs}
       title={'Coming Soon'}

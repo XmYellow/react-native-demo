@@ -107,7 +107,7 @@ class MsgCenter extends Component {
     render = () => {
         const { selectedIndex } = this.state
         return (
-                <View style={{flex:1,marginTop:54,backgroundColor:'#f5f5f5'}}>
+                <View style={{flex:1,backgroundColor:'#f5f5f5'}}>
                     <ButtonGroup
                         onPress={this.updateIndex}
                         selectedIndex={selectedIndex}
