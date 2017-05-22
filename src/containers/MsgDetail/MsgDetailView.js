@@ -1,5 +1,5 @@
 import React, { PropTypes,Component } from 'react';
-import { View,Slider,Image,TouchableHighlight } from 'react-native';
+import { View,Slider,Image,TouchableHighlight,ScrollView } from 'react-native';
 
 // Consts and Libs
 import { AppStyles } from '@theme/';
@@ -69,39 +69,39 @@ class MsgCenter extends Component {
     render = () => {
 
         return (
+            <ScrollView
+                automaticallyAdjustContentInsets={false}
+                ref={(a) => { this.scrollView = a; }}
+
+            >
             <View style={{paddingVertical:51}}>
                 <View style={[AppStyles.row]}>
                     <View style={[AppStyles.flex1]}>
                         <Image
                             source={{uri: this.state.result.url}}
-                            style={{height:200}}
+                            style={{height:320}}
                         />
                         <Text style={{position:'absolute',color:'#fff',margin:5,backgroundColor:'rgba(0, 0, 0, 0.5)'}}>{'位置：'}{this.state.result.camera}</Text>
                     </View>
                 </View>
                 <View style={{padding:5}}>
-                    <View style={[AppStyles.row]}>
-                        <View style={[AppStyles.flex1]}>
-                            <Text style={{fontSize:11,fontWeight:'400'}}>{'用户：'}{this.state.result.name}</Text>
-                        </View>
-                        <View style={[AppStyles.flex1]}>
-                            <Text style={{fontSize:11,fontWeight:'400'}}>{'性别：'}{this.state.result.sex}</Text>
-                        </View>
-                    </View>
-                    <Text style={{fontSize:11,fontWeight:'400'}}>{'证件类型：'}{this.state.result.id_type}</Text>
-                    <Text style={{fontSize:11,fontWeight:'400'}}>{'身份证号：'}{this.state.result.id_num}</Text>
-                    <Text style={{fontSize:11,fontWeight:'400'}}>{'国籍：'}{this.state.result.nationality}</Text>
-                    <Text style={{fontSize:11,fontWeight:'400'}}>{'发现处理：'}{this.state.result.title}</Text>
+                    <Text style={{padding:3}}>{'用户：'}{this.state.result.name}</Text>
+                    <Text style={{padding:3}}>{'性别：'}{this.state.result.sex}</Text>
+                    <Text style={{padding:3}}>{'证件类型：'}{this.state.result.id_type}</Text>
+                    <Text style={{padding:3}}>{'身份证号：'}{this.state.result.id_num}</Text>
+                    <Text style={{padding:3}}>{'国籍：'}{this.state.result.nationality}</Text>
+                    <Text style={{padding:3}}>{'发现处理：'}{this.state.result.title}</Text>
                 </View>
                 <View style={[AppStyles.row]}>
                     <View style={[AppStyles.flex2]}>
-                        <Text style={{padding:5,fontSize:11,fontWeight:'400'}}>{'发现时间：'}{'8分钟前'}</Text>
+                        <Text style={{padding:8}}>{'发现时间：'}{'8分钟前'}</Text>
                     </View>
                     <View style={[AppStyles.flex1]}>
-                        <Button style={{fontSize:11,color:'#03a9f4'}} title={'报警'} onPress={this.warning}/>
+                        <Button  small={true} backgroundColor={'#f78e3d'} title={'报警'} onPress={this.warning}/>
                     </View>
                 </View>
             </View>
+            </ScrollView>
         );
     }
 }
