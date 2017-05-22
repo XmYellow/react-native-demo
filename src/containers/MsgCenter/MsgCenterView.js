@@ -86,15 +86,15 @@ class MsgCenter extends Component {
                         <View style={[AppStyles.flex1]}>
                             <Image
                                 source={{uri: listContent.url}}
-                                style={{height:40,width:40,borderRadius:20}}
+                                style={{height:50,width:50,borderRadius:25}}
                             />
                         </View>
                         <View style={[AppStyles.flex3]}>
-                            <Text style={{fontSize:11}}>[{listContent.title}]</Text>
-                            <Text style={{fontSize:11,fontWeight:'400'}}>用户:{listContent.name}{"  "}位置:{listContent.camera}</Text>
+                            <Text style={{fontSize:13,marginTop:3}}>[{listContent.title}]</Text>
+                            <Text style={{fontSize:13,fontWeight:'400',marginTop:5}}>用户:{listContent.name}{"  "}位置:{listContent.camera}</Text>
                         </View>
                         <View style={[AppStyles.flex1]}>
-                            <Text style={{fontSize:11,fontWeight:'400'}}>{"5分钟前"}</Text>
+                            <Text style={{fontSize:13,fontWeight:'400',marginTop:3}}>{"5分钟前"}</Text>
                         </View>
 
                     </View>
@@ -112,7 +112,7 @@ class MsgCenter extends Component {
                         onPress={this.updateIndex}
                         selectedIndex={selectedIndex}
                         buttons={["未查看","已查看"]}
-                        TextStyle={{fontSize:11}}
+                        TextStyle={{fontSize:13}}
                         containerStyle={{height: 30}} />
                     <Spacer size={10}/>
                     {this.renderContent(this.state.dataSource.cloneWithRows(this.state.results))}

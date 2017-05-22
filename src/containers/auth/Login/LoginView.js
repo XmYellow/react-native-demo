@@ -149,7 +149,7 @@ class Login extends Component {
                         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
                             <Image
                                 source={{uri: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493806221026&di=1d4d48839f5918b62e4bdf7347857519&imgtype=0&src=http%3A%2F%2Fringcdn.shoujiduoduo.com%2Fwallpaper%2Fdd%2Fthumb%2Ft_295654.jpg'}}
-                                style={{height:100,width:100,borderRadius:50,marginVertical:15}}
+                                style={{height:200,width:200,borderRadius:100,marginVertical:20}}
                             />
                         </View>
                         <View style={[AppStyles.flex1]}/>
@@ -160,6 +160,7 @@ class Login extends Component {
                         value={this.state.form_values}
                         options={this.state.options}
                     />
+                    <Spacer size={15}/>
                     <Button
                         title={'登录'}
                         onPress={this.login}

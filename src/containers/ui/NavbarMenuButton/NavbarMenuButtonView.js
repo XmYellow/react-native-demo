@@ -11,7 +11,7 @@ const NavbarMenuButton = ({ toggleSideMenu }) => (
   <TouchableOpacity
     onPress={toggleSideMenu}
     activeOpacity={0.7}
-    style={{ top: -4 }}
+    style={{ top: 3 }}
     hitSlop={{ top: 7, right: 7, bottom: 7, left: 7 }}
   >
     <Icon name={'menu'} size={32} color={'#fff'} />
