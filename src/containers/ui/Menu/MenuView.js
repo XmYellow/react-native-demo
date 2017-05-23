@@ -95,11 +95,11 @@ class Menu extends Component {
     this.state = {
       menu: [
         {
-          title: 'Setting',
+          title: '设置',
           onPress: () => { this.props.closeSideMenu(); Actions.setting(); }
         },{
-          title: 'MsgCenter',
-          onPress: () => { this.props.closeSideMenu(); Actions.msgcenter(); }
+          title: '消息中心',
+          onPress: () => { this.props.closeSideMenu(); Actions.MsgCenterView(); }
         }
       ],
     };

@@ -58,13 +58,6 @@ export default Actions.create(
       />
         <Scene
         clone
-        key={'msgcenter'}
-        title={'消息中心'}
-        component={MsgCenter}
-        analyticsDesc={'消息中心'}
-      />
-        <Scene
-        clone
         key={'msgdetail'}
         title={'消息详情'}
         component={MsgDetail}
